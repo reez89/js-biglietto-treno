@@ -1,4 +1,5 @@
 //**Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
+function myFunction(){
     var chilometri = Number(prompt("Quanti km devi percorrere?"));
     var etàPasseggero = Number(prompt("Quanti anni hai?"));
     document.getElementById('chilometri').innerHTML = "Km : " + chilometri;
@@ -39,5 +40,8 @@ else if (etàPasseggero > 65){
     //console.log(newTicket)
     document.getElementById('discount').innerHTML = "Prezzo: " + newTicket.toFixed(2) + " euro";
 
+}else {
+    alert("COMPLETE ALL FIELDS!");
 }
 
+}
