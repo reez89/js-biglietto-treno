@@ -1,9 +1,12 @@
 //**Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
-var chilometri = Number(prompt("Quanti km devi percorrere?"));
-var etàPasseggero = Number(prompt("Quanti anni hai?"));
-document.getElementById('chilometri').innerHTML = "Km : " + chilometri;
-document.getElementById('etàPasseggero').innerHTML = "Età : " + etàPasseggero;
-console.log(chilometri, etàPasseggero);
+function myFunction(){
+    var chilometri = Number(prompt("Quanti km devi percorrere?"));
+    var etàPasseggero = Number(prompt("Quanti anni hai?"));
+    document.getElementById('chilometri').innerHTML = "Km : " + chilometri;
+    document.getElementById('etàPasseggero').innerHTML = "Età : " + etàPasseggero;
+
+
+//console.log(chilometri, etàPasseggero);
 
 //**Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 //**il prezzo del biglietto è definito in base ai km (0.21 € al km)
@@ -36,4 +39,6 @@ else if (etàPasseggero > 65){
     newTicket = prezzoBiglietto  - (prezzoBiglietto * 0.4);
     //console.log(newTicket)
     document.getElementById('discount').innerHTML = "Prezzo: " + newTicket.toFixed(2) + " euro";
+}
+
 }
